@@ -10,7 +10,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
-<img src="https://via.placeholder.com/800x420/0f172a/e2e8f0?text=App+Screenshot+Here" alt="App screenshot" width="700"/>
+<img src="" alt="App screenshot" width="700"/>
 
 *Replace the image above with an actual screenshot of your running app.*
 
