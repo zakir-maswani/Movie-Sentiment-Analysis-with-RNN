@@ -61,7 +61,7 @@ sentiment-app/
 │   ├── model.py                 # SentimentRNN architecture
 │   ├── preprocessing.py         # Text cleaning pipeline
 │   ├── requirements.txt
-|.  ├── data_preprocessing_and_model_training.ipynb       
+|  ├── data_preprocessing_and_model_training.ipynb       
 │   └── artifacts/               # Trained model + vectorizer (not committed — see below)
 │       ├── rnn_sentiment.pth
 │       ├── tfidf_vectorizer.pkl
@@ -69,7 +69,9 @@ sentiment-app/
 ├── frontend/
 │   ├── index.html               # UI markup
 │   ├── style.css                # Styling
-│   └── script.js                # Fetch calls + DOM updates
+│   └── script.js
+├── positive_review.png
+├── negative_review.png             
 └── README.md
 ```
 
