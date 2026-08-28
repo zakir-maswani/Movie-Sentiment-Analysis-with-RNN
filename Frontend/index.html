@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Review Sentiment</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Movie Review Sentiment</h1>
+    <p class="subtitle">Paste a movie review and the RNN will classify it as positive or negative.</p>
+
+    <textarea
+      id="review-input"
+      placeholder="e.g. This film was a stunning piece of storytelling with brilliant performances..."
+      rows="8"
+    ></textarea>
+
+    <div class="row">
+      <span id="char-count">0 characters</span>
+      <button id="predict-btn">Analyze Sentiment</button>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+
+    <section id="result" class="result hidden">
+      <div class="result-header">
+        <span id="result-emoji"></span>
+        <span id="result-label"></span>
+      </div>
+      <div class="bar-track">
+        <div id="bar-fill" class="bar-fill"></div>
+      </div>
+      <div class="bar-labels">
+        <span>Negative</span>
+        <span id="result-confidence"></span>
+        <span>Positive</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
