@@ -37,11 +37,11 @@ No React, no build tools, no fuss — clone it, install, run, and you have a wor
 
 ```
 ┌─────────────────┐        POST /api/predict        ┌──────────────────────┐
-│   Browser (UI)   │ ───────────────────────────────▶│    FastAPI Backend    │
-│   index.html     │                                  │    main.py             │
-│   style.css      │ ◀─────────────────────────────── │                         │
-│   script.js      │      { sentiment, prob }          │  preprocessing.py       │
-└─────────────────┘                                  │  model.py                │
+│   Browser (UI)   │ ───────────────────────────────▶│    FastAPI Backend   │
+│   index.html     │                                  │    main.py                │
+│   style.css      │ ◀─────────────────────────────── │                     │
+│   script.js      │      { sentiment, prob }          │  preprocessing.py        │
+└─────────────────┘                                  │  model.py               │
                                                        │        ↓                 │
                                                        │  TF-IDF Vectorizer       │
                                                        │        ↓                 │
@@ -59,7 +59,8 @@ sentiment-app/
 │   ├── main.py                  # FastAPI app & /api/predict endpoint
 │   ├── model.py                 # SentimentRNN architecture
 │   ├── preprocessing.py         # Text cleaning pipeline
-│   ├── requirements.txt         # Python dependencies
+│   ├── requirements.txt
+|.  ├── data_preprocessing_and_model_training.ipynb       
 │   └── artifacts/               # Trained model + vectorizer (not committed — see below)
 │       ├── rnn_sentiment.pth
 │       ├── tfidf_vectorizer.pkl
@@ -68,8 +69,6 @@ sentiment-app/
 │   ├── index.html               # UI markup
 │   ├── style.css                # Styling
 │   └── script.js                # Fetch calls + DOM updates
-├── notebook/
-│   └── data_preprocessing_and_model_training.ipynb
 └── README.md
 ```
 
@@ -93,7 +92,7 @@ sentiment-app/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/<zakir-maswani>/<Movie-Sentiment-Analysis-with-RNN>.git
 cd <your-repo>/sentiment-app
 ```
 
@@ -115,8 +114,6 @@ Make sure `backend/artifacts/` contains:
 - `rnn_sentiment.pth`
 - `tfidf_vectorizer.pkl`
 - `label_encoder.pkl`
-
-*(These are produced by the training notebook in `notebook/`.)*
 
 ### 4. Run the app
 
