@@ -13,8 +13,6 @@
 <img src="positive_review.png" alt="App screenshot" width="700"/>
 <img src="negative_review.png" alt="App screenshot" width="700"/>
 
-*Replace the image above with an actual screenshot of your running app.*
-
 </div>
 
 ---
